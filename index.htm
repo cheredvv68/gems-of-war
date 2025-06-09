@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://localhost/GOW_004-1.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Ближайшие события</title><link rel="stylesheet" href="./GOW.css" type="text/css"><script type="text/javascript" src="chrome-extension://epebfcehmdedogndhlcacafjaacknbcm/nmcades_plugin_api.js"></script><style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/montserrat/v30/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style></head><body wotdisconnected="true"><span id="warning-container"><i data-reactroot=""></i></span><table class="noBorder"><tbody><tr><td class="noBorder"><a class="button button-blue" href="http://localhost/index.php">На главную</a></td><td class="noBorder small grey">Возврат на главную страницу проекта</td></tr></tbody></table><h3>КАЛЕНДАРЬ СОБЫТИЙ</h3><table id="T01"><colgroup><col width="150"><col width="100"><col width="280"><col width="180"><col width="120"><col width="130"><col width="80"><col width="80"><col width="80"></colgroup><tbody><tr><td class="center bold grey greyBG">Неделя</td><td rowspan="2" class="center bold grey greyBG">Гильдейское событие недели</td><td class="center bold grey greyBG">Новинки</td><td class="center bold grey greyBG">Фракция</td><td class="center bold grey greyBG">Спасение Питомца</td><td class="center bold grey greyBG">Класс Героя</td><td colspan="3" class="center bold grey greyBG">Событие на выходные</td></tr><tr><td class="center grey bold greyBG">Королевство<br>и подшпиль<br><span class="small grey nobold">(ограничение на войска)</span></td><td class="center grey italic greyBG">Понедельник</td><td class="center grey italic greyBG">Вторник</td><td class="center grey italic greyBG">Среда</td><td class="center grey italic greyBG">Четверг</td><td class="center grey italic greyBG">Пятница</td><td class="center italic red greyBG">Суббота</td><td class="center italic red greyBG">Воскресенье</td></tr><tr><td><span class="bold large blue">24</span><br><span class="small blue italic">9-15 июня</span><br><br><span class="bold">Казиел</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>Камнемолот</p><p>Мифрилион</p><p>Овен</p></span></td><td><span class="bold">Башня беды</span><br><span class="brown">Беда камня</span><br><span class="small grey">Оружие события:</span><br><span class="red">Сотерель беды</span></td><td><p><span class="small blue italic">09 июня</span></p><p><span class="small black bold">Новые войска:</span></p><p><span class="troopRarity6 bold">Даго'Нат</span> <span class="small nobold">(Мерлантис) <span class="grey-dark">демон, морской житель</span></span></p><p><span class="troopRarity4">Статуя Парагона</span> <span class="small nobold">(Казиел) <span class="grey-dark">гном, конструкт</span></span></p><p><span class="small black bold">Новое оружие:</span><br></p><p><span class="troopRarity7 bold">Сотерель беды</span> <span class="small nobold">(Казиел)</span></p><p><span class="small black bold">Будет повышена MAX мощь королевств:</span><br></p><p><span class="bold">Мерлантис</span> до <span class="green bold">30</span>ур.</p></td><td><span class="small blue italic">10 июня</span><br><span class="bold">Импириназар</span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Зуб Импирины</span><br></td><td><span class="small blue italic">11 июня</span><br><span class="bold brown">Рокки</span></td><td><span class="small blue italic">12 июня</span><br><span class="bold">Жрец рун</span></td><td colspan="3"><span class="small blue italic">13-15 июня</span><br><span class="bold blue">Нажива</span><br>
+                <span class="small grey">Капитан события:<br></span>Багровый Вирмлинг<br><br><p><span class="small black bold">Новые войска:</span><br></p><p><span class="troopRarity2">Багровый Вирмлинг</span> <span class="small nobold">(Коготь Дракона) <span class="grey-dark">дракон</span></span></p></td></tr><tr><td><span class="bold large blue">25</span><br><span class="small blue italic">16-22 июня</span><br><br><span class="bold">Мерлантис</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>Ундин</p><p>Акватика</p><p>Рыбы</p></span></td><td><span class="bold"><span class="magenta">Рейдовый босс</span></span><br><span class="small grey">Капитан события:<br></span>Каспийский</td><td><p><span class="small blue italic">16 июня</span></p><p><span class="small black bold">Новые войска:</span></p><p><span class="troopRarity3">Блум Ламантин</span> <span class="small nobold">(Мерлантис) <span class="grey-dark">морской житель, зверь</span></span></p><p><span class="troopRarity4">Каспийский</span> <span class="small nobold">(Мерлантис) <span class="grey-dark">морской житель</span></span></p><p><span class="small black bold">Новое оружие:</span><br></p><p><span class="troopRarity5">Коралловый Лук</span> <span class="small nobold">(Мерлантис)</span></p><p><span class="small black bold">Новые питомцы:</span><br></p><p><span class="brown">Summer Pet 2025</span> <span class="small nobold">(Блуждающие Пески) </span><span class="small nobold grey-dark">Kingdom Team Bonus </span></p><p><span class="brown">Golden Summer Pet 2025</span> <span class="small nobold">(Блуждающие Пески) </span><span class="small nobold grey-dark">Cosmetic </span></p></td><td><span class="small blue italic">17 июня</span><br><span class="bold">Море Печали</span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Извивающийся посох</span><br></td><td><span class="small blue italic">18 июня</span><br><span class="bold brown">Гуппи</span></td><td><span class="small blue italic">19 июня</span><br><span class="bold">Повелитель морей</span><br><p><span class="bold red">Войны гильдий</span></p></td><td colspan="3"><span class="small blue italic">20-22 июня</span><br><br><p><span class="bold red">Войны гильдий</span></p></td></tr><tr><td><span class="bold large blue">26</span><br><span class="small blue italic">23-29 июня</span><br><br><span class="bold">Долина Фавна</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>Дикая королева</p><p>Фавн</p><p>Дикий король</p><p>Каприхор</p></span></td><td><span class="bold"><span class="green">Путешествие</span></span><br><span class="small grey">Капитан события:<br></span>Соната</td><td><p><span class="small blue italic">23 июня</span></p><p><span class="small black bold">Новые войска:</span></p><p><span class="troopRarity3">Кролия-копейщица</span> <span class="small nobold">(Долина Фавна) <span class="grey-dark">дикий народец</span></span></p><p><span class="troopRarity4">Соната</span> <span class="small nobold">(Долина Фавна) <span class="grey-dark">дикий народец</span></span></p><p><span class="small black bold">Новое оружие:</span><br></p><p><span class="troopRarity5">Заяц-дробилка</span> <span class="small nobold">(Долина Фавна)</span></p></td><td><span class="small blue italic">24 июня</span><br><span class="bold">Огненный Разлом</span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Плетеный Посох</span><br></td><td><span class="small blue italic">25 июня</span><br><span class="bold brown">Фавнетта</span></td><td><span class="small blue italic">26 июня</span><br><span class="bold">Бард</span></td><td colspan="3"><span class="small blue italic">27-29 июня</span><br><span class="bold magenta">Нападение на фракцию</span><br>
+                <span class="bold black">Огненный Разлом</span><br><br><p><span class="small black bold">Новые войска:</span><br></p><p><span class="troopRarity4">Лавовый эттин</span> <span class="small nobold">(Огненный Разлом) <span class="grey-dark">элементаль, великан</span></span></p></td></tr><tr><td><span class="bold large blue">27</span><br><span class="small blue italic">30 июня - 6 июля</span><br><br><span class="bold">Полуночный</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>Дракон Пустоты</p><p>Архидруид Чернодрев</p></span></td><td><span class="bold"><span class="grey">Мировое событие</span></span><br></td><td><p><span class="small blue italic">30 июня</span></p><p><span class="small black bold">Новые войска:</span></p><p><span class="troopRarity3">Mydnight Innovator</span> <span class="small nobold">(Полуночный) <span class="grey-dark"></span></span></p><p><span class="small black bold">Новые питомцы:</span><br></p><p><span class="brown">Campaign 24 Pet</span> <span class="small nobold">(Драк-Зум) </span><span class="small nobold grey-dark">Cosmetic </span></p><p><span class="small black bold">Будет повышена MAX мощь королевств:</span><br></p><p><span class="bold">Полуночный</span> до <span class="grey-dark bold">14</span>ур.</p></td><td><span class="small blue italic">01 июля</span><br><span class="bold">Кошмарный Цирк</span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Костяной хлыст</span><br></td><td><span class="small blue italic">02 июля</span><br></td><td><span class="small blue italic">03 июля</span><br><span class="bold"><span class="grey">Ткач ночи</span></span></td><td colspan="3"><span class="small blue italic">4-6 июля</span><br></td></tr><tr><td><span class="bold large blue">28</span><br><span class="small blue italic">7-13 июля</span><br><br><span class="bold">Шэньтан</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>Тянь И</p><p>Хуанлун</p><p>Бирюзовый Император</p></span></td><td><span class="bold"><span class="grey">Вторжение</span></span><br></td><td><p><span class="small blue italic">07 июля</span></p><p><span class="small black bold">Новые войска:</span></p><p><span class="troopRarity4">Xuanwu</span> <span class="small nobold">(Шэньтан) <span class="grey-dark"></span></span></p><p><span class="small black bold">Новое оружие:</span><br></p><p><span class="troopRarity5">Holy Breeze</span> <span class="small nobold">(Шэньтан)</span></p></td><td><span class="small blue italic">08 июля</span><br><span class="bold"><span class="grey">Логово Лиразы</span></span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Посох Безумия</span><br></td><td><span class="small blue italic">09 июля</span><br></td><td><span class="small blue italic">10 июля</span><br><span class="bold"><span class="grey">Монах</span></span></td><td colspan="3"><span class="small blue italic">11-13 июля</span><br><p><span class="small black bold">Новые войска:</span><br></p><p><span class="troopRarity1">Sky Elf Mage</span> <span class="small nobold">(Шэньтан) <span class="grey-dark"></span></span></p></td></tr><tr><td><span class="bold large blue">29</span><br><span class="small blue italic">14-20 июля</span><br><br><span class="bold">Зул'Кари</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>Арахнид-ткач</p><p>Архипрокси Ивендра</p><p>Мандрагора</p></span></td><td><span class="bold"><span class="grey">Башня беды</span></span><br></td><td><p><span class="small blue italic">14 июля</span></p><p><span class="small black bold">Новые войска:</span></p><p><span class="troopRarity4">Scrollweaver</span> <span class="small nobold">(Зул'Кари) <span class="grey-dark"></span></span></p><p><span class="small black bold">Новое оружие:</span><br></p><p><span class="troopRarity7 bold">Doomed Balliste</span> <span class="small nobold">(Зул'Кари)</span></p></td><td><span class="small blue italic">15 июля</span><br><span class="bold"><span class="grey">Эльдражор</span></span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Жезл эльдразов</span><br></td><td><span class="small blue italic">16 июля</span><br></td><td><span class="small blue italic">17 июля</span><br><span class="bold"><span class="grey">Прядильщик</span></span></td><td colspan="3"><span class="small blue italic">18-20 июля</span><br></td></tr><tr><td><span class="bold large blue">30</span><br><span class="small blue italic">21-27 июля</span><br><br><span class="bold">Адана</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>ТИНА-9000</p><p>Железный Ястреб</p><p>Искринатор</p></span></td><td><span class="bold"><span class="grey">Рейдовый босс</span></span><br></td><td><p><span class="small blue italic">21 июля</span></p><p><span class="small black bold">Новые войска:</span></p><p><span class="troopRarity4">WATTS-1927</span> <span class="small nobold">(Адана) <span class="grey-dark"></span></span></p><p><span class="troopRarity4">LOCK-1887</span> <span class="small nobold">(Адана) <span class="grey-dark"></span></span></p></td><td><span class="small blue italic">22 июля</span><br><span class="bold"><span class="grey">Город Умельцев</span></span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Циркулярка умельца</span><br></td><td><span class="small blue italic">23 июля</span><br></td><td><span class="small blue italic">24 июля</span><br><span class="bold"><span class="grey">Механист</span></span></td><td colspan="3"><span class="small blue italic">25-27 июля</span><br><p><span class="small black bold">Будет повышена MAX мощь королевств:</span><br></p><p><span class="bold">Адский Кряж</span> до <span class="grey-dark bold">23</span>ур.</p></td></tr><tr><td><span class="bold large blue">31</span><br><span class="small blue italic">28 июля - 3 августа</span><br><br><span class="bold">Вайтхельм</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>Аватар Гаарда</p><p>Архидэв</p><p>Либара</p><p>Аматиэль</p></span></td><td><span class="bold"><span class="grey">Путешествие</span></span><br></td><td><p><span class="small blue italic">28 июля</span></p><p><span class="small black bold">Новые войска:</span></p><p><span class="troopRarity4">Sir Hector</span> <span class="small nobold">(Вайтхельм) <span class="grey-dark"></span></span></p></td><td><span class="small blue italic">29 июля</span><br><span class="bold"><span class="grey">Зал Стражей</span></span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Корона стражей</span><br></td><td><span class="small blue italic">30 июля</span><br></td><td><span class="small blue italic">31 июля</span><br><span class="bold"><span class="grey">Жрец</span></span></td><td colspan="3"><span class="small blue italic">1-3 августа</span><br></td></tr><tr><td><span class="bold large blue">32</span><br><span class="small blue italic">4-10 августа</span><br><br><span class="bold">Грех Мараджа</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>Королева Греха</p><p>Бич Чести</p><p>Бич амбиций</p></span></td><td><span class="bold"><span class="grey">Мировое событие</span></span><br></td><td><p><span class="small blue italic">04 августа</span></p><p><span class="small black bold">Новые войска:</span></p><p><span class="troopRarity4">Maiden of Pain</span> <span class="small nobold">(Грех Мараджа) <span class="grey-dark"></span></span></p><p><span class="small black bold">Будет повышена MAX мощь королевств:</span><br></p><p><span class="bold">Грех Мараджа</span> до <span class="grey-dark bold">27</span>ур.</p></td><td><span class="small blue italic">05 августа</span><br><span class="bold"><span class="grey">Глубины Греха</span></span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Восьмой грех</span><br></td><td><span class="small blue italic">06 августа</span><br></td><td><span class="small blue italic">07 августа</span><br><span class="bold"><span class="grey">Прорицатель</span></span></td><td colspan="3"><span class="small blue italic">8-10 августа</span><br></td></tr><tr><td><span class="bold large blue">33</span><br><span class="small blue italic">11-17 августа</span><br><br><span class="bold">Кетар</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>Фарос-Ра</p><p>Фараон Нефертани</p><p>Рат-Амон</p><p>Фараон Хафру</p></span></td><td><span class="bold"><span class="grey">Вторжение</span></span><br></td><td><p><span class="small blue italic">11 августа</span></p><p><span class="small black bold">Новые войска:</span></p><p><span class="troopRarity4">Horusite Champion</span> <span class="small nobold">(Кетар) <span class="grey-dark"></span></span></p><p><span class="troopRarity3">Sekhite Priestess</span> <span class="small nobold">(Кетар) <span class="grey-dark"></span></span></p><p><span class="troopRarity6 bold">Immortal Honor</span> <span class="small nobold">(Вайтхельм) <span class="grey-dark"></span></span></p><p><span class="troopRarity6 bold">Immortal Leio</span> <span class="small nobold">(Земли Прайда) <span class="grey-dark"></span></span></p><p><span class="troopRarity5">Angelic Lancer</span> <span class="small nobold">(Лезвие Меча) <span class="grey-dark"></span></span></p><p><span class="troopRarity6 bold">Angelic Healer</span> <span class="small nobold">(Вайтхельм) <span class="grey-dark"></span></span></p><p><span class="small black bold">Новые питомцы:</span><br></p><p><span class="brown">Beast Fest Pet 2025</span> <span class="small nobold">(Серебристая Поляна) </span><span class="small nobold grey-dark">Kingdom Team Bonus </span></p><p><span class="brown">Golden Beast Fest Pet 2025</span> <span class="small nobold">(Серебристая Поляна) </span><span class="small nobold grey-dark">Cosmetic </span></p><p><span class="brown">Honor Pet</span> <span class="small nobold">(Лезвие Меча) </span><span class="small nobold grey-dark">Single Troop Bonus Immortal Honor</span></p><p><span class="brown">Leio's Kitty</span> <span class="small nobold">(Земли Прайда) </span><span class="small nobold grey-dark">Single Troop Bonus Immortal Leio</span></p></td><td><span class="small blue italic">12 августа</span><br><span class="bold"><span class="grey">Топь Клыка</span></span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Кровожадный топор</span><br></td><td><span class="small blue italic">13 августа</span><br></td><td><span class="small blue italic">14 августа</span><br><span class="bold"><span class="grey">Некромант</span></span></td><td colspan="3"><span class="small blue italic">15-17 августа</span><br></td></tr><tr><td><span class="bold large blue">34</span><br><span class="small blue italic">18-24 августа</span><br><br><span class="bold">Лисиция</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>Фенекс</p><p>Агуара</p></span></td><td><span class="bold"><span class="grey">Башня беды</span></span><br></td><td><p><span class="small blue italic">18 августа</span></p><p><span class="small black bold">Новые войска:</span></p><p><span class="troopRarity5">King of Runes</span> <span class="small nobold">(Драк-Зум) <span class="grey-dark"></span></span></p><p><span class="troopRarity4">Spirit of Luck</span> <span class="small nobold">(Лисиция) <span class="grey-dark"></span></span></p><p><span class="small black bold">Будет повышена MAX мощь королевств:</span><br></p><p><span class="bold">Лисиция</span> до <span class="grey-dark bold">19</span>ур.</p><p><span class="bold">Драк-Зум</span> до <span class="grey-dark bold">24</span>ур.</p></td><td><span class="small blue italic">19 августа</span><br><span class="bold"><span class="grey">Лисий двор</span></span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Жезл Двора</span><br></td><td><span class="small blue italic">20 августа</span><br></td><td><span class="small blue italic">21 августа</span><br><span class="bold"><span class="grey">Духостранник</span></span></td><td colspan="3"><span class="small blue italic">22-24 августа</span><br><p><span class="small black bold">Будет повышена MAX мощь королевств:</span><br></p><p><span class="bold">Лисиция</span> до <span class="grey-dark bold">20</span>ур.</p></td></tr><tr><td><span class="bold large blue">35</span><br><span class="small blue italic">25-31 августа</span><br><br><span class="bold">Блуждающие Пески</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>Скорпиус</p><p>Шахбану Веспера</p><p>Скорпио</p><p>Хронос</p></span></td><td><span class="bold"><span class="grey">Рейдовый босс</span></span><br></td><td><p><span class="small blue italic">25 августа</span></p><p><span class="small black bold">Новые войска:</span></p><p><span class="troopRarity6 bold">Gormungandr</span> <span class="small nobold">(Драк-Зум) <span class="grey-dark"></span></span></p><p><span class="troopRarity3">Desert Ox</span> <span class="small nobold">(Блуждающие Пески) <span class="grey-dark"></span></span></p><p><span class="troopRarity4">Denwen the Wanderer</span> <span class="small nobold">(Блуждающие Пески) <span class="grey-dark"></span></span></p><p><span class="small black bold">Будет повышена MAX мощь королевств:</span><br></p><p><span class="bold">Драк-Зум</span> до <span class="grey-dark bold">25</span>ур.</p></td><td><span class="small blue italic">26 августа</span><br><span class="bold"><span class="grey">Глубинный улей</span></span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Медовик</span><br></td><td><span class="small blue italic">27 августа</span><br></td><td><span class="small blue italic">28 августа</span><br><span class="bold"><span class="grey">Дервиш</span></span></td><td colspan="3"><span class="small blue italic">29-31 августа</span><br></td></tr><tr><td><span class="bold large blue">36</span><br><span class="small blue italic">1-7 сентября</span><br><br><span class="bold">Драк-Зум</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>Павшая Валдис</p><p>Обсидиус</p><p>Король-призрак Мрачнорог</p></span></td><td><span class="bold"><span class="grey">Путешествие</span></span><br></td><td><p><span class="small blue italic">01 сентября</span></p><p><span class="small black bold">Новые войска:</span></p><p><span class="troopRarity4">Forsaken Guardian</span> <span class="small nobold">(Драк-Зум) <span class="grey-dark"></span></span></p><p><span class="small black bold">Будет повышена MAX мощь королевств:</span><br></p><p><span class="bold">Драк-Зум</span> до <span class="grey-dark bold">27</span>ур.</p></td><td><span class="small blue italic">02 сентября</span><br><span class="bold"><span class="grey">Иллития</span></span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Запретный том</span><br></td><td><span class="small blue italic">03 сентября</span><br></td><td><span class="small blue italic">04 сентября</span><br><span class="bold"><span class="grey">Душегуб</span></span></td><td colspan="3"><span class="small blue italic">5-7 сентября</span><br><p><span class="small black bold">Будет повышена MAX мощь королевств:</span><br></p><p><span class="bold">Адский Кряж</span> до <span class="grey-dark bold">24</span>ур.</p></td></tr><tr><td><span class="bold large blue">38</span><br><span class="small blue italic">15-21 сентября</span><br><br><span class="bold">Отравленные Земли</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>Пропастия</p><p>Архигерцог</p><p>Королева суккубов</p><p>Астарот</p></span></td><td><span class="bold"><span class="grey">Вторжение</span></span><br></td><td><p><span class="small blue italic">15 сентября</span></p></td><td><span class="small blue italic">16 сентября</span><br><span class="bold"><span class="grey">Порченое Гнездо</span></span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Оберег порчи</span><br></td><td><span class="small blue italic">17 сентября</span><br></td><td><span class="small blue italic">18 сентября</span><br><span class="bold"><span class="grey">Оккультист</span></span></td><td colspan="3"><span class="small blue italic">19-21 сентября</span><br></td></tr><tr><td><span class="bold large blue">39</span><br><span class="small blue italic">22-28 сентября</span><br><br><span class="bold">Шипящий Туман</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>Эвриала</p><p>Мамбасира</p><p>Медуза</p><p>Такшака</p></span></td><td><span class="bold"><span class="grey">Башня беды</span></span><br></td><td><p><span class="small blue italic">22 сентября</span></p></td><td><span class="small blue italic">23 сентября</span><br><span class="bold"><span class="grey">Темные Ямы</span></span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Нож из ям</span><br></td><td><span class="small blue italic">24 сентября</span><br></td><td><span class="small blue italic">25 сентября</span><br><span class="bold"><span class="grey">Ассасин</span></span></td><td colspan="3"><span class="small blue italic">26-28 сентября</span><br></td></tr><tr><td><span class="bold large blue">40</span><br><span class="small blue italic">29 сентября - 5 октября</span><br><br><span class="bold">Райские Поля</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>Крушитель миров</p><p>Астральная мать</p><p>Стрелециан</p></span></td><td><span class="bold"><span class="grey">Рейдовый босс</span></span><br></td><td><p><span class="small blue italic">29 сентября</span></p></td><td><span class="small blue italic">30 сентября</span><br><span class="bold"><span class="grey">Дикий Двор</span></span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Дикий охотник</span><br></td><td><span class="small blue italic">01 октября</span><br></td><td><span class="small blue italic">02 октября</span><br><span class="bold"><span class="grey">Оракул</span></span></td><td colspan="3"><span class="small blue italic">3-5 октября</span><br></td></tr><tr><td><span class="bold large blue">41</span><br><span class="small blue italic">6-12 октября</span><br><br><span class="bold">Дикий Дол</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>Кетрас Бык</p><p>Повелитель резни</p><p>Телец</p><p>Король Стормгард</p></span></td><td><span class="bold"><span class="grey">Путешествие</span></span><br></td><td><p><span class="small blue italic">06 октября</span></p></td><td><span class="small blue italic">07 октября</span><br><span class="bold"><span class="grey">Лабиринт</span></span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Рубило Миноса</span><br></td><td><span class="small blue italic">08 октября</span><br></td><td><span class="small blue italic">09 октября</span><br><span class="bold"><span class="grey">Шаман</span></span></td><td colspan="3"><span class="small blue italic">10-12 октября</span><br></td></tr><tr><td><span class="bold large blue">42</span><br><span class="small blue italic">13-19 октября</span><br><br><span class="bold">Черная Метка</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>Мегазавр</p><p>Сикоракс</p><p>Кантур</p><p>Жуткий капитан Грим</p></span></td><td><span class="bold"><span class="grey">Мировое событие</span></span><br></td><td><p><span class="small blue italic">13 октября</span></p></td><td><span class="small blue italic">14 октября</span><br><span class="bold"><span class="grey">Черное Сердце</span></span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Рог Черносерда</span><br></td><td><span class="small blue italic">15 октября</span><br></td><td><span class="small blue italic">16 октября</span><br><span class="bold"><span class="grey">Корсар</span></span></td><td colspan="3"><span class="small blue italic">17-19 октября</span><br></td></tr><tr><td><span class="bold large blue">43</span><br><span class="small blue italic">20-26 октября</span><br><br><span class="bold">Серебристая Поляна</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>Королева Аврора</p><p>Воля Ниши</p><p>Левкитракс</p></span></td><td><span class="bold"><span class="grey">Вторжение</span></span><br></td><td><p><span class="small blue italic">20 октября</span></p></td><td><span class="small blue italic">21 октября</span><br><span class="bold"><span class="grey">Серебряный Некрополь</span></span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Жизнь и смерть</span><br></td><td><span class="small blue italic">22 октября</span><br></td><td><span class="small blue italic">23 октября</span><br><span class="bold"><span class="grey">Архимаг</span></span></td><td colspan="3"><span class="small blue italic">24-26 октября</span><br></td></tr><tr><td><span class="bold large blue">44</span><br><span class="small blue italic">27 октября - 2 ноября</span><br><br><span class="bold">Урскоград</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>Коготь Рока</p><p>Курандара</p><p>Разъяренный Курандара</p><p>Биеска</p></span></td><td><span class="bold"><span class="grey">Башня беды</span></span><br></td><td><p><span class="small blue italic">27 октября</span></p></td><td><span class="small blue italic">28 октября</span><br><span class="bold"><span class="grey">Леса Оборотней</span></span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Звериный коготь</span><br></td><td><span class="small blue italic">29 октября</span><br></td><td><span class="small blue italic">30 октября</span><br><span class="bold"><span class="grey">Дозорный</span></span></td><td colspan="3"><span class="small blue italic">31 октября - 2 ноября</span><br></td></tr><tr><td><span class="bold large blue">45</span><br><span class="small blue italic">3-9 ноября</span><br><br><span class="bold">Долина Фавна</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>Дикая королева</p><p>Фавн</p><p>Дикий король</p><p>Каприхор</p></span></td><td><span class="bold"><span class="grey">Рейдовый босс</span></span><br></td><td><p><span class="small blue italic">03 ноября</span></p></td><td><span class="small blue italic">04 ноября</span><br><span class="bold"><span class="grey">Заказник</span></span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Плетеный Посох</span><br></td><td><span class="small blue italic">05 ноября</span><br></td><td><span class="small blue italic">06 ноября</span><br><span class="bold"><span class="grey">Бард</span></span></td><td colspan="3"><span class="small blue italic">7-9 ноября</span><br></td></tr><tr><td><span class="bold large blue">46</span><br><span class="small blue italic">10-16 ноября</span><br><br><span class="bold">Коготь Дракона</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>Элемогрим</p><p>Иштара</p><p>Ти'амата</p><p>Хроматиция</p><p>Бахамата</p></span></td><td><span class="bold"><span class="grey">Путешествие</span></span><br></td><td><p><span class="small blue italic">10 ноября</span></p></td><td><span class="small blue italic">11 ноября</span><br><span class="bold"><span class="grey">Змеилище</span></span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Коготь дракона</span><br></td><td><span class="small blue italic">12 ноября</span><br></td><td><span class="small blue italic">13 ноября</span><br><span class="bold"><span class="grey">Драконий страж</span></span></td><td colspan="3"><span class="small blue italic">14-16 ноября</span><br></td></tr><tr><td><span class="bold large blue">47</span><br><span class="small blue italic">17-23 ноября</span><br><br><span class="bold">Грош-Нак</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>Гаргантавр</p><p>Тень Зорна</p><p>Глаз Арга</p></span></td><td><span class="bold"><span class="grey">Мировое событие</span></span><br></td><td><p><span class="small blue italic">17 ноября</span></p></td><td><span class="small blue italic">18 ноября</span><br><span class="bold"><span class="grey">Сочащиеся Пещеры</span></span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Выброс желе</span><br></td><td><span class="small blue italic">19 ноября</span><br></td><td><span class="small blue italic">20 ноября</span><br><span class="bold"><span class="grey">Варвар</span></span></td><td colspan="3"><span class="small blue italic">21-23 ноября</span><br></td></tr><tr><td><span class="bold large blue">49</span><br><span class="small blue italic">1-7 декабря</span><br><br><span class="bold">Колючий Лес</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>Избранница Ясмин</p><p>Король Кроводрев</p><p>Вираго</p><p>Разлагающаяся Королева</p></span></td><td><span class="bold"><span class="grey">Башня беды</span></span><br></td><td><p><span class="small blue italic">01 декабря</span></p></td><td><span class="small blue italic">02 декабря</span><br><span class="bold"><span class="grey">Первобытный разлом</span></span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Клинок Разлома</span><br></td><td><span class="small blue italic">03 декабря</span><br></td><td><span class="small blue italic">04 декабря</span><br><span class="bold"><span class="grey">Лучник</span></span></td><td colspan="3"><span class="small blue italic">5-7 декабря</span><br></td></tr><tr><td><span class="bold large blue">50</span><br><span class="small blue italic">8-14 декабря</span><br><br><span class="bold">Заеджин</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>Верховный король Железнобрюх</p><p>Пылающий Они</p><p>Фея-крестная мать гоблинов</p></span></td><td><span class="bold"><span class="grey">Рейдовый босс</span></span><br></td><td><p><span class="small blue italic">08 декабря</span></p></td><td><span class="small blue italic">09 декабря</span><br><span class="bold"><span class="grey">Аманитракс</span></span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Фолиант спор</span><br></td><td><span class="small blue italic">10 декабря</span><br></td><td><span class="small blue italic">11 декабря</span><br><span class="bold"><span class="grey">Вор</span></span></td><td colspan="3"><span class="small blue italic">12-14 декабря</span><br></td></tr><tr><td><span class="bold large blue">51</span><br><span class="small blue italic">15-21 декабря</span><br><br><span class="bold">Земли Прайда</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>Убастет</p><p>Уменат</p><p>Лео</p><p>Араватар</p></span></td><td><span class="bold"><span class="grey">Путешествие</span></span><br></td><td><p><span class="small blue italic">15 декабря</span></p></td><td><span class="small blue italic">16 декабря</span><br><span class="bold"><span class="grey">Дворец Индраджита</span></span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Коготь Индраджита</span><br></td><td><span class="small blue italic">17 декабря</span><br></td><td><span class="small blue italic">18 декабря</span><br><span class="bold"><span class="grey">Копье Солнца</span></span></td><td colspan="3"><span class="small blue italic">19-21 декабря</span><br></td></tr><tr><td><span class="bold large blue">52</span><br><span class="small blue italic">22-28 декабря</span><br><br><span class="bold">Каракот</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>Ваш'Дагон</p><p>Дэтлок Дрейлак</p><p>Древний дракон</p></span></td><td><span class="bold"><span class="grey">Мировое событие</span></span><br></td><td><p><span class="small blue italic">22 декабря</span></p></td><td><span class="small blue italic">23 декабря</span><br><span class="bold"><span class="grey">Дуэргарот</span></span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Память камня</span><br></td><td><span class="small blue italic">24 декабря</span><br></td><td><span class="small blue italic">25 декабря</span><br><span class="bold"><span class="grey">Чародей</span></span></td><td colspan="3"><span class="small blue italic">26-28 декабря</span><br></td></tr><tr><td><span class="bold large blue">1</span><br><span class="small blue italic">29 декабря - 4 января</span><br><br><span class="bold">Адский Кряж</span><br><br><span class="black small bold">Зелёные ключи:</span><br><span class="troopRarity6 bold small"><p>Турмалин</p><p>Колосс</p><p>Грованга</p></span></td><td><span class="bold"><span class="grey">Путешествие</span></span><br></td><td><p><span class="small blue italic">29 декабря</span></p></td><td><span class="small blue italic">30 декабря</span><br><span class="bold"><span class="grey">Обсидиановые глубины</span></span><br><span class="small grey">В магазине фракции оружие:</span><br><span class="troopRarity5">Обсидиановый кодекс</span><br></td><td><span class="small blue italic">31 декабря</span><br></td><td><span class="small blue italic">01 января</span><br><span class="bold"><span class="grey">Геомант</span></span></td><td colspan="3"><span class="small blue italic">2-4 января</span><br></td></tr></tbody></table><br><h3>КАЛЕНДАРЬ ДЛИННЫХ СОБЫТИЙ</h3><table id="T01"><colgroup><col width="80"><col width="300"><col width="300"></colgroup><tbody><tr><td class="center bold grey greyBG">Неделя</td><td class="center bold grey greyBG">События кампаний</td><td class="center bold grey greyBG">События ПвП сезонов</td></tr><tr><td><span class="bold large blue">24</span><br><span class="small blue italic">9-15 июня</span></td><td>Продолжается Трезубец Даго'НатаМифик кампании Даго'Нат<br>14 апреля - 22 июня</td><td>Продолжается Сезон Ярости<br>26 мая - 10 августа </td></tr><tr><td><span class="bold large blue">25</span><br><span class="small blue italic">16-22 июня</span></td><td>Окончание Трезубец Даго'Ната <br></td><td><br> </td></tr><tr><td><span class="bold large blue">26</span><br><span class="small blue italic">23-29 июня</span></td><td> <br></td><td><br> </td></tr><tr><td><span class="bold large blue">27</span><br><span class="small blue italic">30 июня - 6 июля</span></td><td>Начинается Кампания 24 <br>30 июня - 7 сентября</td><td><br> </td></tr><tr><td><span class="bold large blue">28</span><br><span class="small blue italic">7-13 июля</span></td><td> <br></td><td><br> </td></tr><tr><td><span class="bold large blue">29</span><br><span class="small blue italic">14-20 июля</span></td><td> <br></td><td><br> </td></tr><tr><td><span class="bold large blue">30</span><br><span class="small blue italic">21-27 июля</span></td><td> <br></td><td><br> </td></tr><tr><td><span class="bold large blue">31</span><br><span class="small blue italic">28 июля - 3 августа</span></td><td> <br></td><td><br> </td></tr><tr><td><span class="bold large blue">32</span><br><span class="small blue italic">4-10 августа</span></td><td> <br></td><td>Окончание Сезон Ярости<br> </td></tr><tr><td><span class="bold large blue">33</span><br><span class="small blue italic">11-17 августа</span></td><td> <br></td><td>ПвП сезон 6<br>11 августа - 26 октября<br>Мифик PvP-сезона Angelic Healer</td></tr><tr><td><span class="bold large blue">34</span><br><span class="small blue italic">18-24 августа</span></td><td> <br></td><td><br> </td></tr><tr><td><span class="bold large blue">35</span><br><span class="small blue italic">25-31 августа</span></td><td>Мифик кампании Hungry Serpent<br></td><td><br> </td></tr><tr><td><span class="bold large blue">36</span><br><span class="small blue italic">1-7 сентября</span></td><td>Окончание Кампания 24 <br></td><td><br> </td></tr><tr><td><span class="bold large blue">38</span><br><span class="small blue italic">15-21 сентября</span></td><td>Начинается Кампания 25 <br>15 сентября - 23 ноября</td><td><br> </td></tr><tr><td><span class="bold large blue">39</span><br><span class="small blue italic">22-28 сентября</span></td><td> <br></td><td><br> </td></tr><tr><td><span class="bold large blue">40</span><br><span class="small blue italic">29 сентября - 5 октября</span></td><td> <br></td><td><br> </td></tr><tr><td><span class="bold large blue">41</span><br><span class="small blue italic">6-12 октября</span></td><td> <br></td><td><br> </td></tr><tr><td><span class="bold large blue">42</span><br><span class="small blue italic">13-19 октября</span></td><td> <br></td><td><br> </td></tr><tr><td><span class="bold large blue">43</span><br><span class="small blue italic">20-26 октября</span></td><td> <br></td><td>Окончание ПвП сезон 6<br> </td></tr><tr><td><span class="bold large blue">44</span><br><span class="small blue italic">27 октября - 2 ноября</span></td><td> <br></td><td><br> </td></tr><tr><td><span class="bold large blue">45</span><br><span class="small blue italic">3-9 ноября</span></td><td> <br></td><td><br> </td></tr><tr><td><span class="bold large blue">46</span><br><span class="small blue italic">10-16 ноября</span></td><td>Мифик кампании <br></td><td><br> </td></tr><tr><td><span class="bold large blue">47</span><br><span class="small blue italic">17-23 ноября</span></td><td>Окончание Кампания 25 <br></td><td><br> </td></tr><tr><td><span class="bold large blue">49</span><br><span class="small blue italic">1-7 декабря</span></td><td> <br></td><td><br> </td></tr><tr><td><span class="bold large blue">50</span><br><span class="small blue italic">8-14 декабря</span></td><td> <br></td><td><br> </td></tr><tr><td><span class="bold large blue">51</span><br><span class="small blue italic">15-21 декабря</span></td><td> <br></td><td><br> </td></tr><tr><td><span class="bold large blue">52</span><br><span class="small blue italic">22-28 декабря</span></td><td> <br></td><td><br> </td></tr><tr><td><span class="bold large blue">1</span><br><span class="small blue italic">29 декабря - 4 января</span></td><td> <br></td><td><br> </td></tr></tbody></table><br><br></body></html>

@@ -84,7 +84,7 @@ p {
 .dark-greenBG {background: #2a7700;}
 .bright-yellowBG {background: #fffb00;}
 .yellowBG {background: #fffb048f;} 
-.light-yellowBG {background: #fffb043b;}
+.light-yellowBG {background: #fcfbbb;}
 .greyBG {background: #ddddddd0;}
 .dark-greyBG {background: #b3b3b3ea;}
 .light-greyBG {background: #dddddd94;}
@@ -92,14 +92,16 @@ p {
 .light-greenBG {background: #9cf79463;}
 .greenBG {background: #13d102de;}
 .blueBG {background: #043fff;}
-.cyanBG {background: #04d9ff;}
+.cyanBG {background: #bee5ff;}
+.light-cyanBG {background: #d8efff;}
 .redBG {background: #ff0404;}
 .roseBG {background: #ff5151;}
 .magentaBG {background: #9b04ff;}
 .brownBG {background: #682f00;}
-.light-redBG {background: #fa606046;}
-.light2-redBG {background: #fa606018;}
+.light-redBG {background: #fac0c0;}
+.light2-redBG {background: #ffd5d5;}
 .blackBG {background: #222;} 
+.whiteBG {background: #ffffff;} 
 
 .numeric {
 	text-align: right;

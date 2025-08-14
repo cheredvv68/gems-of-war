@@ -6,6 +6,7 @@ table {
     font-size: 0.8em;  
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
 }
+
 #fixedheight {
   table-layout: fixed;
 }
@@ -13,6 +14,11 @@ table {
 #fixedheight td {
   height: 150px;
 }
+
+/*#fixedheight td div {
+  height: 300px;
+  overflow: hidden;
+}*/
 
 .noBorder {
   border: 0 solid red;
@@ -167,7 +173,11 @@ img {
     width:  72px;
     
   }
-
+  img.StatusIcon {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    width:  160px;
+  }
   img.mediumDoomskull {
     margin-top: 1px;
     margin-bottom: 1px;

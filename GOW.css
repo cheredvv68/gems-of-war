@@ -130,7 +130,7 @@ p.center_p {
 .orangeBG {background: #ffbc04e1;}
 .light-greenBG {background: #9cf79463;}
 .greenBG {background: #13d102de;}
-.blueBG {background: #043fff;}
+.blueBG {background: #8da8ff;}
 .cyanBG {background: #bee5ff;}
 .light-cyanBG {background: #d8efff;}
 .redBG {background: #ff0404;}
@@ -490,4 +490,5 @@ font-size: 80%;
   background-color: #4a6cdb;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+
 }

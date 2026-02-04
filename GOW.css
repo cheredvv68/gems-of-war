@@ -38,6 +38,10 @@ table {
   overflow: hidden;
 }*/
 
+.con {position:relative;}
+
+.top {position:absolute;top:0;left:0;}
+
 .noBorder {
   border: 0 solid red;
   box-shadow: none;
@@ -93,7 +97,10 @@ p.center_p {
   --unit: 0px;
   --unit_0: 0px;
 }
-
+p.standart_p {
+  --unit: 0px;
+  --unit_0: 0px;
+}
 .indent { text-indent: 15px; } /* Красная строка */
 
 .no_left_border {
@@ -209,7 +216,7 @@ img {
     width:  24px;
     height: 24px;
   }
-  /*.tooltip {
+  .tooltip {
     position: sticky;
     z-index: 9;
     width: auto;
@@ -221,10 +228,10 @@ img {
     color: black;
     text-align: left;
     font-weight: normal;
-  }*/
+  }
   .regularTooltip {
-    /*display: none;
-    font-size: var(--table-font-size);*/
+    display: none;
+    font-size: var(--table-font-size);
     font-size: 0.7em;
     box-shadow: 1px 1px 3px #595959;
   }
@@ -317,7 +324,39 @@ img {
     border-spacing: 0;
     font-size: 9pt;
   }
+
+  .image-tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted #007bff; /* Подчёркивание пунктиром для подсказки */
+    cursor: help;
+  }
   
+  .tooltip-image {
+    visibility: hidden;
+    position: absolute;
+    top: -10px;           /* Отступ сверху от слова */
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1000;
+    pointer-events: none; /* Чтобы не мешала взаимодействию */
+  }
+  
+  /* Показываем картинку при наведении */
+  .image-tooltip:hover .tooltip-image {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* Стилизация изображения */
+  .tooltip-image img {
+    max-width: 200px;  /* Максимальный размер */
+    max-height: 150px; /* Максимальный размер */
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }  
  
 .troopRarity1 {
   color: #999999;
@@ -490,5 +529,4 @@ font-size: 80%;
   background-color: #4a6cdb;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-
 }

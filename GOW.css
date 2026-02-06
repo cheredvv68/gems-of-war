@@ -42,6 +42,8 @@ table {
 
 .top {position:absolute;top:0;left:0;}
 
+.top-r {position:absolute;top:0;left:58px;}
+
 .noBorder {
   border: 0 solid red;
   box-shadow: none;
@@ -325,6 +327,7 @@ img {
     font-size: 9pt;
   }
 
+/*******************************************************/
   .image-tooltip {
     position: relative;
     display: inline-block;
@@ -357,7 +360,65 @@ img {
     border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }  
- 
+ /*******************************************************/
+ /* Всплывающая подсказка: картинка и текст справа от неё */
+ .tooltip-mix {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted #007bff;
+  cursor: help;
+}
+
+.tooltip-content {
+  max-width: none;
+  width: auto;
+  visibility: hidden;
+  position: absolute; /*absolute*/
+  top: -10px;
+  left: 120px;
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  z-index: 1000;
+  pointer-events: none;
+  background-color: #fffeb3;
+  padding: 6px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tooltip-mix:hover .tooltip-content {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(-110%);
+}
+
+/* Контейнер для картинки и текста (гибкий макет) */
+.tooltip-inner {
+  display: flex;
+  align-items: flex-start; /* Вертикальное выравнивание */
+  gap: 6px; /* Расстояние между картинкой и текстом */
+}
+
+/* Стилизация изображения */
+.tooltip-inner img {
+  max-width: 72px;
+  max-height: 106px;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Стилизация текста справа от картинки */
+.tooltip-text {
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  line-height: 1.5;
+  flex: 1; /* Занимает оставшееся пространство */
+  width: 180px;
+
+}
+/***************************************/
 .troopRarity1 {
   color: #999999;
 }

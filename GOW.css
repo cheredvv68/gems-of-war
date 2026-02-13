@@ -111,6 +111,9 @@ p.standart_p {
 .no_right_border {
   border-right-style: none; /* Стиль линии */
 }
+.no_all_border {
+  border-style: none; /* Стиль линии */
+}
 .grey {color: #888;} 
 .grey-dark {color: #555;} 
 .white {color: #fff;}

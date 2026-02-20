@@ -377,7 +377,7 @@ img {
   width: auto;
   visibility: hidden;
   position: absolute; /*absolute*/
-  top: -10px;
+  top: 5px; /*-10*/
   left: 120px;
   transform: translateX(-50%) translateY(-100%);
   opacity: 0;
@@ -593,4 +593,5 @@ font-size: 80%;
   background-color: #4a6cdb;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+
 }

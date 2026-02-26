@@ -154,6 +154,12 @@ p.standart_p {
 .blackBG {background: #222;} 
 .whiteBG {background: #ffffff;} 
 
+.tea-green-BG {background: #caffbf;}
+.electric-BG {background: #9bf6ff;}
+.cream-BG {background: #fdffb6;}
+.sunset-BG {background: #ffd6a5;}
+.melon-BG {background: #ffadad;}
+
 .numeric {
 	text-align: right;
 }
@@ -377,7 +383,7 @@ img {
   width: auto;
   visibility: hidden;
   position: absolute; /*absolute*/
-  top: 5px; /*-10*/
+  top: 5px;
   left: 120px;
   transform: translateX(-50%) translateY(-100%);
   opacity: 0;
@@ -593,5 +599,4 @@ font-size: 80%;
   background-color: #4a6cdb;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-
 }

@@ -25,6 +25,11 @@ table {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
 }
 
+.f_bookman {
+  font-family: "Bookman Old Style", Bookman, serif;
+  font-size: 135%;
+}
+
 #fixedheight {
   table-layout: fixed;
 }

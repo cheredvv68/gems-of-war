@@ -119,6 +119,12 @@ p.standart_p {
 .no_all_border {
   border-style: none; /* Стиль линии */
 }
+.no_left_padding {
+  padding-left: 0px; /* Поочередно устанавливается поля от верхнего, правого, нижнего и левого края */
+}
+.no_right_padding {
+  padding-right: 0px; /* Поочередно устанавливается поля от верхнего, правого, нижнего и левого края */
+}
 .grey {color: #888;} 
 .grey-dark {color: #555;} 
 .white {color: #fff;}
@@ -168,6 +174,10 @@ p.standart_p {
 .numeric {
 	text-align: right;
 }
+.right {
+	text-align: right;
+}
+
 .bold {
 	font-weight: bold;
 }

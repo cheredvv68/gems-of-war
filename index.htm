@@ -1,23 +1,212 @@
-<!DOCTYPE html><html><head><link type="image/x-icon" rel="shortcut icon" href="favicon.ico"><title>Главная</title><link rel="stylesheet" href="GOW.css" type="text/css">
+<!DOCTYPE html><html><head><link type="image/x-icon" rel="shortcut icon" href="favicon.ico"><title>Главная</title>
+	<style>
+table { 
+    font-family: verdana;
+    margin: 10px auto; 
+    border: 1px solid #ccc;
+    border-spacing: 2;
+    font-size: 0.8em;  
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+.noBorder {
+    border: none;
+    box-shadow: none;
+}
+  /* Нечетные строки */
+tr:nth-child(odd){
+    background: #fff;
+}
+  /* Четные строки */
+tr:nth-child(even){
+    background: #f0f0f0;
+}
+tr {
+	vertical-align: top;
+} 
+th {
+  background: #ddddddd0;
+  color: #888;
+}
+th, td {
+	border: 1px solid #ccc;
+	padding: 5px;
+}
+.grey {color: #888;} 
+.red {color: #b70000;} 
+.numeric {
+	text-align: right;
+}
+.right {
+	text-align: right;
+}
+
+.bold {
+	font-weight: bold;
+}
+.nobold {
+	font-weight: normal;
+}
+.italic {
+    font-style: italic; /* Курсивное начертание */
+}
+.small {
+  font-size: 0.8em;
+  
+}
+.large {
+  font-size: 1.2em;
+}
+.verdana {
+  font-family: verdana;
+}
+.center {
+  text-align: center;
+  
+}
+
+* {box-sizing: border-box}
+body {font-family: "Verdana", sans-serif;}
+
+/* Стиль табуляции */
+.tab {
+  float: left;
+  border: 0px solid #ccc;
+  background-color: #f1f1f1;
+  width: 20%;
+  height: 500px;
+}
+
+/* Стиль кнопок внутри вкладок */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Изменение цвета фона кнопок при наведении курсора мыши */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Создание класса активной/текущей "вкладки кнопки" */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Стиль содержимого вкладки */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: none;
+  width: 80%;
+  border-left: none;
+  height: 500px;
+}
+
+.button {
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  .button-red {
+    background-color: #ce1313; /* Red */
+  }
+  .button-red:hover {
+    background-color: #e25858; /* Red */
+    color: white;
+  }
+  .button-red:active {
+    background-color: #ce1313;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  .button-green {
+    background-color: #3e8e41; /* Green */
+  }
+  .button-green:hover {
+    background-color: #82d37b; /* Green */
+    color: white;
+  }
+  .button-green:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  .button-blue {
+    background-color: #4a6cdb; /* Green */
+  }
+  .button-blue:hover {
+    background-color: #869de9; /* Green */
+    color: white;
+  }
+  .button-blue:active {
+    background-color: #4a6cdb;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  
+</style>
   <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ZvVaylrzbekj7JmSTEfoUphMeJDJ0y-X5iDkrTvdApJcjjVpLvPEW4JzOijPgNgx" charset="UTF-8"></script>
+  <script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Получите элемент с id="defaultOpen" и нажмите на него
+document.getElementById("defaultOpen").click();
+</script>
 </head><body>
   <table class="noBorder"><tr><td class="noBorder numeric"><span class="bold red">Ясена</span></td></tr>
     <tr><td class="noBorder"><img src="/gems-of-war/graf/Anabios.png" alt="A"><img src="/gems-of-war/graf/logo_v2_medium_50.png" alt="B" style="position:absolute;top:0px;left:50%;" /></td></tr>
   </table>
-  <table class="noBorder">
-    
-    
-    <tr><td class="noBorder">
-      <table class="noBorder"><colgroup><col width="100"><col width="200"></colgroup>
+	<div class="tab">
+		<button class="tablinks" onclick="openCity(event, `London`)" id="defaultOpen">Календари и спойлеры</button>
+		<button class="tablinks" onclick="openCity(event, `Paris`)">Справочные таблицы</button>
+		<button class="tablinks" onclick="openCity(event, `Rome`)">Прочие таблицы</button>
+		<button class="tablinks" onclick="openCity(event, `Amsterdam`)">Тестирование</button>
+	</div>
+
+	<div id="London" class="tabcontent">
+	<table class="noBorder"><colgroup><col width="200"><col width="400"></colgroup>
+
         <tr><td class="noBorder"><a class="button button-red" href="/gems-of-war/Events.html">События</a></td><td class="noBorder grey">Информация о ближайших событиях игры, новых войсках, оружии, питомцах</td></tr>
-        
         <tr><td class="noBorder"><a class="button button-blue" href="/gems-of-war/Spoilers.html">Спойлеры</a></td><td class="noBorder grey">Войска, питомцы и оружие, которые будут введены в игру в ближайшее время</td></tr>
         <tr><td class="noBorder"><a class="button button-green" href="/gems-of-war/Guilds.html">Гильдии</a></td><td class="noBorder grey">Таблица топ Гильдий и статистика изменения их рейтинга</td></tr>
         <tr><td class="noBorder"><a class="button button-blue" href="/gems-of-war/Soulforge-2.html">Кузня</a></td><td class="noBorder grey">Сводная таблица по Мификам из Кузни Душ</td></tr>
         <tr><td class="noBorder"><a class="button button-green" href="/gems-of-war/Soulforge-Dragons.html">Драконы</a></td><td class="noBorder grey">Сводная таблица по Драконам из Кузни Душ</td></tr>
-        
         <tr><td class="noBorder"><a class="button button-blue" href="/gems-of-war/Campaigns.html">Кампании</a></td><td class="noBorder grey">Сводная таблица по прошедшим кампаниям и связанных с ними мификам</td></tr>
         <tr><td class="noBorder"><a class="button button-blue" href="/gems-of-war/Seasons_PvP.html">Сезоны ПвП</a></td><td class="noBorder grey">Сводная таблица по прошедшим сезонам ПвП и связанных с ними мификам</td></tr>
+	
+	</table></div>
+	<div id="Paris" class="tabcontent">
+	<table class="noBorder"><colgroup><col width="200"><col width="400"></colgroup>
+		
         <tr><td class="noBorder"><a class="button button-blue" href="/gems-of-war/Kingdoms-Max-Power.html">MAX Мощь</a></td><td class="noBorder grey">Таблица Максимальных уровней мощи Королевств (<30) и прогноз изменений на ближайшее время</td></tr>
         <tr><td class="noBorder"><a class="button button-blue" href="/gems-of-war/Mythics.html">Мифики</a></td><td class="noBorder grey">История ВСЕХ Мификов с датами и событиями появления в игре</td></tr>
         
@@ -26,10 +215,22 @@
         <tr><td class="noBorder"><a class="button button-blue" href="/gems-of-war/Heroic_Gems.html">Камни</a></td><td class="noBorder grey">Подробный обзор героических самоцветов</td></tr>
         <tr><td class="noBorder"><a class="button button-blue" href="/gems-of-war/Faction.html">Фракции</a></td><td class="noBorder grey">Полный состав всех фракций, характеристики отрядов. Варианты закрытия 500 уровня (взяты из дискорда нашей гильдии)</td></tr>
         <tr><td class="noBorder"><a class="button button-blue" href="/gems-of-war/Classes.html">Классы</a></td><td class="noBorder grey">Подробная информация о классах героев, их навыках и талантах</td></tr>
+		
+	</table></div>
+	<div id="Rome" class="tabcontent">
+	<table class="noBorder"><colgroup><col width="200"><col width="400"></colgroup>
+		
         <tr><td class="noBorder"><a class="button button-blue" href="/gems-of-war/Patchnotes.html">Все патчи</a></td><td class="noBorder grey">Краткая информация обо всех патчах игры со ссылками на официальный сайт</td></tr>
         <tr><td class="noBorder"><a class="button button-blue" href="/gems-of-war/Recolorers.html">Красилы</a></td><td class="noBorder grey">Сводная таблица войск-красил</td></tr>
         
         <tr><td class="noBorder"><a class="button button-blue" href="/gems-of-war/Weapons-1.html">Оружие</a></td><td class="noBorder grey">Оружие, отобранное по критериям</td></tr>
         <tr><td class="noBorder"><a class="button button-blue" href="/gems-of-war/Power-Conditions.html">Мощь</a></td><td class="noBorder grey">Таблица бонусов и условий прокачки Мощи королевств</td></tr>
       
-      </table></td></tr></table></body></html>
+	</table></div>
+	<div id="Amsterdam" class="tabcontent">
+	<table class="noBorder"><colgroup><col width="200"><col width="400"></colgroup>
+	
+	
+	</table></div>
+	  
+</body></html>

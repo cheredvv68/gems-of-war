@@ -163,24 +163,7 @@ body {font-family: "Verdana", sans-serif;}
   
 </style>
   <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ZvVaylrzbekj7JmSTEfoUphMeJDJ0y-X5iDkrTvdApJcjjVpLvPEW4JzOijPgNgx" charset="UTF-8"></script>
-  <script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-// Получите элемент с id="defaultOpen" и нажмите на него
-document.getElementById("defaultOpen").click();
-</script>
+  
 </head><body>
   <table class="noBorder"><tr><td class="noBorder numeric"><span class="bold red">Ясена</span></td></tr>
     <tr><td class="noBorder"><img src="/gems-of-war/graf/Anabios.png" alt="A"><img src="/gems-of-war/graf/logo_v2_medium_50.png" alt="B" style="position:absolute;top:0px;left:50%;" /></td></tr>
@@ -234,3 +217,21 @@ document.getElementById("defaultOpen").click();
 	</table></div>
 	  
 </body></html>
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Получите элемент с id="defaultOpen" и нажмите на него
+document.getElementById("defaultOpen").click();
+</script>

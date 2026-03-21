@@ -110,16 +110,13 @@ p.standart_p {
 }
 .indent { text-indent: 15px; } /* Красная строка */
 
-.no_left_border {
-  border-left-style: none; /* Стиль линии */
-}
-.no_right_border {
-  border-right-style: none; /* Стиль линии */
-}
-.no_all_border {
-  border-style: none; /* Стиль линии */
-}
+.no_top_border {border-top-style: none;}
+.no_bottom_border {border-bottom-style: none;}
+.no_left_border {border-left-style: none;}
+.no_right_border {border-right-style: none;}
+.no_all_border {border-style: none;}
 .no_left_padding {
+
   padding-left: 0px; /* Поочередно устанавливается поля от верхнего, правого, нижнего и левого края */
 }
 .no_right_padding {
@@ -194,12 +191,17 @@ p.standart_p {
 .large {
   font-size: 1.2em;
 }
+.large2 {
+  font-size: 1.5em;
+}
 .verdana {
   font-family: verdana;
 }
 .center {
   text-align: center;
-  
+}
+.middle {
+  vertical-align: middle;
 }
 
 img {
@@ -567,11 +569,11 @@ font-size: 80%;
   color:  #4cac44;
 }
 .button {
-  width: 100px;
+  width: 180px;
   border-radius: 5px;
   border: none;
   color: white;
-  padding: 12px 32px;
+  padding: 12px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -615,3 +617,25 @@ font-size: 80%;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+#myInput {
+  display: block; /* Делаем Input блочным */
+  margin: 0 auto; /* Центруем по горизонтали */
+  background-image: url('/css/searchicon.png'); /* Добавить значок поиска для ввода */
+  background-position: 10px 12px; /* Расположите значок поиска */
+  background-repeat: no-repeat; /* Не повторяйте изображение значка */
+  width: 40%; /* 100% Полная ширина */
+  font-size: 16px; /* Увеличить размер шрифта */
+  padding: 12px 20px 12px 40px; /* Добавить немного отступов */
+  border: 1px solid #ddd; /* Добавить серую границу */
+  margin-bottom: 12px; /* Добавить некоторое пространство под входом */
+}
+
+.badge {
+  background-color: red;
+  color: white;
+  padding: 3px 6px;
+  text-align: center;
+  border-radius: 5px;
+}
+

@@ -52,9 +52,9 @@ body {font-family: "Verdana", sans-serif;}
   position: fixed; /* Остается на месте */
   z-index: 1; /* Размещается сверху */
   padding-top: 100px; /* Расположение поля */
-  left: 20%;
+  left: 10%;
   top: 0;
-  width: 60%; /* Полная ширина */
+  width: 80%; /* Полная ширина */
   height: 100%; /* Полная высота */
   overflow: auto; /* Включить прокрутку при необходимости */
   background-color: rgb(0,0,0); /* Резервный цвет */
@@ -67,7 +67,7 @@ body {font-family: "Verdana", sans-serif;}
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 50%;
+  width: 70%;
   }
   
   /* Кнопка закрытия */

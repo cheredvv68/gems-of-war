@@ -44,3 +44,43 @@ body {font-family: "Verdana", sans-serif;}
   border-left: none;
   height: 500px;
 }
+
+/* ----------------------------------------------------------- */
+/* Модальное окно (фон) */
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed; /* Остается на месте */
+  z-index: 1; /* Размещается сверху */
+  padding-top: 100px; /* Расположение поля */
+  left: 20%;
+  top: 0;
+  width: 60%; /* Полная ширина */
+  height: 100%; /* Полная высота */
+  overflow: auto; /* Включить прокрутку при необходимости */
+  background-color: rgb(0,0,0); /* Резервный цвет */
+  background-color: rgba(0,0,0,0.4); /* Черный с непрозрачностью */
+  }
+  
+  /* Модальное содержимое */
+  .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  }
+  
+  /* Кнопка закрытия */
+  .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  }

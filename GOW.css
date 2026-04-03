@@ -45,6 +45,8 @@ table {
 
 .con {position:relative;}
 
+.icon-overlay {position:absolute;top:0;left:75%;font-size: 200%;text-shadow: 2px 2px 3px white, -2px -2px 3px white, 0px 0px 10px white;}
+
 .top {position:absolute;top:0;left:0;}
 
 .top-r {position:absolute;top:0;left:58px;}
@@ -53,6 +55,9 @@ table {
   border: 0 solid red;
   box-shadow: none;
 }
+
+td.b-radius, table.b-radius {border-radius: 7px;}
+
 /* Нечетные строки */
 tr:nth-child(odd){
 	background: #fff;
@@ -64,6 +69,12 @@ tr:nth-child(even){
 
 .hide-column {
   display: none;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
 h3 {

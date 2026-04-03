@@ -52,7 +52,7 @@ body {font-family: "Verdana", sans-serif;}
   position: fixed; /* Остается на месте */
   z-index: 1; /* Размещается сверху */
   padding-top: 100px; /* Расположение поля */
-  left: 10%;
+  left: 20%;
   top: 0;
   width: 80%; /* Полная ширина */
   height: 100%; /* Полная высота */
@@ -67,7 +67,7 @@ body {font-family: "Verdana", sans-serif;}
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 70%;
+  width: 57%;
   }
   
   /* Кнопка закрытия */
@@ -83,4 +83,25 @@ body {font-family: "Verdana", sans-serif;}
   color: #000;
   text-decoration: none;
   cursor: pointer;
+  }
+
+  p.p-info {
+    color: darkorchid;
+    background-color: rgb(227, 199, 250);
+    border-left: solid 5px darkorchid;
+    border-radius: 0 10px 10px 0;
+    padding: 12px;
+    line-height: 100%; /*устанавливает интерлиньяж (межстрочный интервал) текста; отсчёт ведётся от базовой линии шрифта. */
+    text-indent: 0px; /*свойство, которое управляет отступом первой строки текста. Оно либо вытягивает строку за пределы абзаца, либо утягивает её внутрь.*/
+  
+  }
+  p.p-exclamation {
+    
+    background-color: lemonchiffon;
+    border: solid 2px red;
+    border-radius: 10px;
+    padding: 12px;
+    line-height: 100%; /*устанавливает интерлиньяж (межстрочный интервал) текста; отсчёт ведётся от базовой линии шрифта. */
+    text-indent: 0px; /*свойство, которое управляет отступом первой строки текста. Оно либо вытягивает строку за пределы абзаца, либо утягивает её внутрь.*/
+  
   }

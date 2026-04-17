@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+margin: 0;
+}
+
+/* Стиль заголовка */
+.header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Стиль верхней панели навигации */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Стиль верхних навигационных ссылок */
+.topnav a {
+  float: left;
+  display: block;
+  width: 140px;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a.split {
+  float: right;
+  width: 140px;
+  height: 100%;
+  background-color: #04AA6D;
+  color: white;
+}
+/* Изменение цвета при наведении */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Создайте три одинаковых столбца, которые плавают рядом друг с другом */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Левый и правый столбец */
+.column.side {
+  width: 25%;
+  
+}
+
+/* Средний столбец */
+.column.middle {
+  width: 75%;
+  height: 600px;
+  padding-top: 10px;
+  overflow-y:auto;
+  
+}
+
+.column.middle thead td  {
+  position: sticky;
+  top: 0;
+  background-color: lightgrey;
+  
+  z-index: 1;
+}
+
+/* Очистить поплавки после колонн */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Отзывчивый макет - делает три колонки стек поверх друг друга, а не рядом друг с другом */
+@media screen and (max-width: 800px) {
+  .column.side, .column.middle {
+      width: 100%;
+  }
+}
+
+#myInput {
+    /*background-image: url('/css/searchicon.png'); /* Добавить значок поиска для ввода */
+    /*background-position: 10px 12px; /* Расположите значок поиска */
+    /*background-repeat: no-repeat; /* Не повторяйте изображение значка */
+    width: 500px; /* Полная ширина */
+    font-size: 16px; /* Увеличить размер шрифта */
+    padding: 8px 16px 8px 40px; /* Добавить немного отступов */
+    border: 1px solid #ddd; /* Добавить серую границу */
+    /*margin-bottom: 12px; /* Добавить некоторое пространство под входом */
+    /*box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);*/
+    background: #fdffb6;
+    margin: 4px 100px 4px 100px;
+  }
+  
+  #myTable {
+    /*border-collapse: collapse; /* Свернуть границы */
+    width: 100%; /* Полная ширина 100%*/
+    /*border: 2px double #aaa; /* Добавить серую границу */
+    border: none;
+    border-radius: 10px;
+    font-size: 16px; /* Увеличить размер шрифта */
+    border-spacing: 3px 12px;
+    box-shadow: none;
+  }
+  
+  #myTable th, #myTable td {
+    text-align: left; /* Выравнивание текста по левому краю */
+    padding: 12px; /* Добавить отступ */
+    border: 2px double #aaa; /* Добавить серую границу */
+    border-radius: 10px;
+  }
+  
+  #myTable tr {
+    /* Добавить нижнюю границу для всех строк таблицы */
+    border-bottom: 1px solid #aaa;
+  }
+  /*, #myTable tr:hover*/
+  #myTable tr.header {
+    /* Добавить серый цвет фона для заголовка таблицы и при наведении курсора мыши */
+    background-color: #f1f1f1;
+  }
+
+  #myTable td.center {
+    text-align: center;
+  }
+
+  /* Нечетные строки */
+#myTable tr:nth-child(odd){
+	background: lemonchiffon;
+}
+/* Четные строки */
+#myTable tr:nth-child(even){
+	background: lemonchiffon;
+}
+
+/* Пользовательский флажок */  
+/* Контейнер */
+.container {
+  display: block;
+  width: 80px;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* При наведении курсора мыши добавьте серый цвет фона */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* Если флажок установлен, добавьте синий фон */
+.container input:checked ~ .checkmark {
+  background-color: #777;
+}
+
+/* Создайте флажок/индикатор (скрытый, если он не установлен) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Показывать галочку при установке флажка */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Стиль галочки/индикатора */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+/* Пользовательское поле выбора */
+/* контейнер должен быть расположен относительно: */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /* скрыть исходный элемент SELECT: */
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/* стиль стрелки внутри элемента select: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* направьте стрелку вверх, когда поле выбора открыто (активно): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* стиль элементов (опций), включая выбранный элемент: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* стиль элементов (опции): */
+.select-items {
+  position: absolute;
+  background-color: Blue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* скрыть элементы при закрытии окна выбора: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* -------------------- */
+.headcontainer {
+  display: flex;
+  align-items: center; /* Выравнивание по вертикали */
+}
+.item {
+  margin-right: 10px; /* Отступы между элементами */
+}

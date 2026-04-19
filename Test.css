@@ -281,3 +281,81 @@ margin: 0;
 .item {
   margin-right: 10px; /* Отступы между элементами */
 }
+
+/* Автодополнение (autocomplete) для input */
+.autocomplete-container {
+  position: relative;
+  width: 200px;
+}
+
+#autocomplete-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-top: none;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  display: none; /* Скрываем по умолчанию */
+}
+
+.suggestion-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.suggestion-item:hover,
+.suggestion-item.active {
+  background-color: #f0f0f0;
+  color: #007bff;
+}
+
+.clear-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #999;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.2s, background-color 0.2s;
+  z-index: 10;
+}
+
+.clear-btn:hover {
+  background-color: #f0f0f0;
+  color: red;
+  /*color: #666;*/
+}
+
+.clear-btn:active {
+  background-color: #e0e0e0;
+}
+
+/* Показываем кнопку, когда в поле есть текст */
+#autocomplete-input:not(:placeholder-shown) + .clear-btn,
+#autocomplete-input:focus:not(:placeholder-shown) + .clear-btn {
+  opacity: 1;
+}

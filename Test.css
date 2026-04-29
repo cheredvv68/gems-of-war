@@ -57,7 +57,7 @@ margin: 0;
 /* Средний столбец */
 .column.middle {
   width: 75%;
-  height: 600px;
+  height: 80vh;
   padding-top: 10px;
   overflow-y:auto;
   
@@ -358,4 +358,11 @@ margin: 0;
 #autocomplete-input:not(:placeholder-shown) + .clear-btn,
 #autocomplete-input:focus:not(:placeholder-shown) + .clear-btn {
   opacity: 1;
+}
+
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+  padding: 2px 4px;
+  border-radius: 3px;
 }

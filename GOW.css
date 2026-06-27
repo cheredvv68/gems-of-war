@@ -422,6 +422,7 @@ img {
   background-color: #fffeb3;
   padding: 6px;
   border-radius: 8px;
+  border: 1px solid brown;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -450,10 +451,10 @@ img {
 .tooltip-text {
   color: #333;
   font-family: Arial, sans-serif;
-  font-size: 9px;
+  font-size: 10px;
   line-height: 1.5;
   flex: 1; /* Занимает оставшееся пространство */
-  width: 180px;
+  width: 250px;
   text-align: left;
 }
 /***************************************/

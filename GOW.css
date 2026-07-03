@@ -112,6 +112,13 @@ p {
   margin-top: 5px;  /* отступ сверху */
   margin-bottom: 0px;  /* отступ снизу */
 }
+p.serif {
+  font-family: "Times New Roman", Times, serif;
+}
+
+p.sansserif {
+  font-family: Verdana, Helvetica, Tahoma, sans-serif, sans-serif;
+}
 p.center_p {
   --unit: 0px;
   --unit_0: 0px;

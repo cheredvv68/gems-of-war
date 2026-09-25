@@ -1,0 +1,295 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  background-color: #f5f5f5;
+}
+
+/* ============================ */
+/*  ШАПКА: название и меню       */
+/* ============================ */
+.header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.navbar {
+  background-color: #444;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
+
+/* ============================ */
+/*  КОНТЕЙНЕР ДЛЯ ДВУХ СЕКЦИЙ    */
+/* ============================ */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* ============================ */
+/*  СЕКЦИЯ ФИЛЬТРОВ (левая)      */
+/* ============================ */
+.column.side {
+  width: 40%;
+  padding: 15px;
+  background-color: #e9e9e9;
+  min-height: 80vh;
+}
+
+.filter-buttons {
+  display: grid;
+  /* 3 колонки равной ширины */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* Расстояние между кнопками */
+  gap: 7px;
+}
+
+.filter-buttons .btn {
+  padding: 10px 16px;
+  border: 1px solid #888;
+  /*background-color: #fff;*/
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
+  border-radius: 4px;
+}
+
+.btn.k2 {
+  background-color: #58b824; /* Зелёный фон */
+}
+.btn.k3 {
+  background-color: #0082ff; /* Синий фон */
+}
+.btn.k4 {
+  background-color: #8a00e6; /* Фиолетовый фон */
+}
+.btn.k5 {
+  background-color: #d79900; /* Оранжевый фон */
+}
+.btn.k6 {
+  background-color: #00b7b7; /* Голубой фон */
+}
+.btn.k7 {
+  background-color: #b70000; /* Красный фон */
+}
+
+
+.filter-buttons .btn:hover {
+  background-color: #ddd;
+}
+
+.filter-buttons .btn.active {
+  background-color: #333;
+  color: white;
+  border-color: #333;
+}
+
+/* ============================ */
+/*  ОСНОВНАЯ СЕКЦИЯ (правая)     */
+/* ============================ */
+.column.middle {
+  width: 60%;
+  padding: 15px;
+  min-height: 80vh;
+}
+
+/* Таблица с прокруткой и липким заголовком */
+.table-wrapper {
+  height: 75vh;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead th {
+  position: sticky;
+  top: 0;
+  background-color: lightgrey;
+  padding: 10px;
+  text-align: left;
+  z-index: 1;
+  border-bottom: 2px solid #999;
+}
+
+table tbody td {
+  vertical-align: top;
+  padding: 8px 10px;
+  border-bottom: 1px solid #999;
+}
+
+table tbody tr:hover {
+  background-color: #f0f8ff;
+}
+
+/* ============================ */
+/*  СКРЫТИЕ / ПОКАЗ ФИЛЬТРОМ      */
+/* ============================ */
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: table-row;
+}
+
+/* ============================ */
+/*  АДАПТИВНОСТЬ: ≤ 800px        */
+/* ============================ */
+@media (max-width: 800px) {
+  .column.side,
+  .column.middle {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .table-wrapper {
+    height: auto;
+    max-height: 50vh;
+  }
+
+  .filter-buttons {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 8px;
+  }
+  
+}
+
+/* ============================ */
+/*  Цвета редкости войск        */
+/* ============================ */
+.troopRarity1 {
+  color: #999999;
+}
+.troopRarity2 {
+  color: #58b824;
+}
+.troopRarity3 {
+  color: #0082ff;
+}
+.troopRarity4 {
+  color: #8a00e6;
+}
+.troopRarity5 {
+  color: #d79900;
+}
+.troopRarity6 {
+  color: #00b7b7;
+}
+.troopRarity7 {
+  color: #b70000;
+}
+
+img {
+  vertical-align: middle;
+  margin-top: 3px;
+  margin-bottom: 6px;
+}
+img.gem {
+  width:  30px;
+  height: 30px;
+}
+
+img.smallIcon {
+  width:  18px;
+  height: 18px;
+}
+img.mediumIcon {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  width:  24px;
+  height: 24px;
+}
+img.LargeIcon {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  width:  72px;
+  
+}
+
+.right,
+.numeric {
+	text-align: right;
+}
+.center {
+  text-align: center;
+}
+.bold {
+	font-weight: bold;
+}
+.nobold {
+	font-weight: normal;
+}
+.italic {
+    font-style: italic; 
+}
+.small {
+  font-size: 0.85em;
+}
+.verysmall {
+  font-size: 0.7em;
+}
+.large {
+  font-size: 1.2em;
+}
+.verylarge {
+  font-size: 1.5em;
+}
+.common {
+  font-size: 1.0em;
+  font-weight: normal;
+  font-style: normal;
+}
+.verdana {
+  font-family: verdana;
+}
+.gray {color: #888;} 
+.gray-dark {color: #555;} 
+.gray-black {color: #333;}
+.gray-light {color: #aaa;}
+.white {color: #fff;}
+.green {color: #58b824;} 
+.green-dark {color: #2a7700;} 
+.blue {color: #0082ff;} 
+.magenta {color: #8a00e6;} 
+.magenta-light {color: #cb47ff;}
+.purple {color: #8a00e6;} 
+.orange {color: #d79900;} 
+.cyan {color: #00b7b7;} 
+.red {color: #b70000;} 
+.red-dark {color: #880000;} 
+.yellow {color: #c2af04;} 
+.black {color: #000;} 
+.brown {color: #682f00;} 

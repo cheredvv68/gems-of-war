@@ -166,9 +166,9 @@ table tbody tr:hover {
 }
 
 /* ============================ */
-/*  АДАПТИВНОСТЬ: ≤ 800px        */
+/*  АДАПТИВНОСТЬ: ≤ 1080px        */
 /* ============================ */
-@media (max-width: 800px) {
+@media (max-width: 1080px) {
   .column.side,
   .column.middle {
     width: 100%;

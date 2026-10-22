@@ -1,5 +1,5 @@
 <!DOCTYPE html><html><head><!-- Google tag (gtag.js) -->
-<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=5CD0NBu7uUina5cPqxoeBFJSD89WHvMZqNJ9cm4xRPTsEFaCDJDGw8M4qOBPan1q0ORWhIL_O1HRvZLrjNPBpA" charset="UTF-8"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-YWKFNB6P62"></script>
+<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=7-lyIuEbOjJ019H5gnYw3Z6pVkO6E6Z10ICWJA5l2SBBwiRZjUKH6hhPJwcWQwMELUDkIRB-ciqHABBvuYYE6A" charset="UTF-8"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-YWKFNB6P62"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -12,14 +12,55 @@
     <link rel="stylesheet" href="special_1.css" type="text/css">
     <link rel="stylesheet" href="GOW.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body><table class="noBorder"><tr><td class="noBorder"><a class="button button-blue" href="/gems-of-war/index.htm">На главную</a></td><td class="noBorder small grey">Возврат на главную страницу проекта</td></tr></table><div class="tab">
+    <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      background: #f0f0f0;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      font-size: 14px;
+      user-select: none;
+      border-radius: 4px;
+    }
+    .copy-btn:hover {
+      background: #e0e0e0;
+    }
+
+    /* Всплывающее уведомление */
+    .toast {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: #333;
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-size: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      opacity: 0;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+      z-index: 9999;
+      pointer-events: none;
+    }
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body><table class="noBorder"><tr><td class="noBorder"><a class="button button-blue" href="/gems-of-war/index.htm">На главную</a></td><td class="noBorder small grey">Возврат на главную страницу проекта</td></tr></table><div class="tab">
   <button class="tablinks" onclick="openCity(event, `London`)" id="defaultOpen">Тактика ПвП от Mauricio</button>
   <button class="tablinks" onclick="openCity(event, `Paris`)">Статья 2</button>
   <button class="tablinks" onclick="openCity(event, `Tokyo`)">Статья 3</button>
   
   
-</div><div id="London" class="tabcontent"><h1>Скоростная тактика в PvP от Mauricio</h1><span class="grey-dark"><p>Есть два вида PvP: обычный (классический) и ботовый. Смысл быстрой игры в PvP основан на боях с ботами, то есть с командами до 9÷10к мощи, иногда и чуть больше, если у них нет никаких сильных войск типа Хризы, Стеллы и героя. Если герой всё же иногда есть, то без класса. Обобщая, без всего того, что помешает быстрому прохождению.</p><p>Под каждую локацию подбирается сборка, рассчитанная на победу за минимальное количество ходов. Если в предложенных трёх боях нет мелких ботов, то делается прокрутка за 1 алмаз. Так вы подбираете себе команду противника для боя. Но бывает накладно по алмазам (можешь отдать за 1 час игры в PvP всю дань по алмазам за этот же час, а при долгой игре и больше). То есть, кто идёт вдолгую, к этой трате должны быть готовы, но можно остановиться и на своём минимуме. Некоторые из ботов дают побольше очков, чем другие, и можно выбирать их в первую очередь. Со временем, по этой тактике игры, они легко запоминаются, и, возможно, их больше, чем эти - Velpar, Halmar, Marlo, Nizel, Cxuма, PAOK. Всем даются разные очки за победу над одним и тем же противником. Чем выше ваш уровень героя, тем меньше очков за победу вы получите. Самые скромные очки получают игроки с уровнем 2000+.</p><p>Результат достигается за счёт скорости проведения боёв. Важно знать своё прохождение очков за час. Перед началом забега в PvP смотрите свои очки, запоминаете и, через час, на сравнении, увидите свой результат за час. Обычно, я бегу от получения дани до новой дани. Если вы пробиваете за час непрерывной игры 6к и меньше-плохо, 7÷14к - средний результат, 15÷18к - хороший, а 19÷23к (и, иногда, у более маленьких по уровню и побольше) - топовый. Но это на красной бонусной подсветке. Без подсветки, на простых локациях - поменьше. И, наконец, медленнее всех - локации с бутылками маны.</p><p>Дальше непрерывность по времени выбираете сами, под себя. Так же вы можете видеть, как бегут ваши соперники по группе (запоминая и сравнивая их результат), а если вы бежите в мировом, то по мировому. Это очень помогает в стратегии. То есть, если вы бьёте 20к за час, а ваш соперник - 12к, то при одинаковй игре по времени, вы легко убежите от него. В свою команду вы выбираете героя на <b>лучнике</b> или <b>титане</b>! Элементалист КАТЕГОРИЧЕСКИ НЕ РЕКОМЕНДУЕТСЯ!!! Нужен старт с заходом 50% маны. Иногда можно использовать команды без героя, для более быстрого прохождения.</p><p>Примеры команд по прохождению локаций:</p><table class="noBorder"><tr><td class="noBorder large bold">Зелёный</td><td class="noBorder large bold">Фиолетовый</td><td class="noBorder large bold">Жёлтый</td><td class="noBorder large bold">Синий</td><td class="noBorder large bold">Элементаль</td></tr><tr><td class="noBorder"><img style="margin-top: 1px; margin-bottom: 1px; width: 200px;" src="/gems-of-war/graf/sets/PvP_green.png" alt=""></td><td class="noBorder"><img style="margin-top: 1px; margin-bottom: 1px; width: 200px;" src="/gems-of-war/graf/sets/PvP_violet.png" alt=""></td><td class="noBorder"><img style="margin-top: 1px; margin-bottom: 1px; width: 200px;" src="/gems-of-war/graf/sets/PvP_yellow.png" alt=""></td><td class="noBorder"><img style="margin-top: 1px; margin-bottom: 1px; width: 200px;" src="/gems-of-war/graf/sets/PvP_blue.png" alt=""></td><td class="noBorder"><img style="margin-top: 1px; margin-bottom: 1px; width: 200px;" src="/gems-of-war/graf/sets/PvP_elemental.png" alt=""></td></tr><tr><td class="noBorder center bold small narrow">[7622,1426,7524,6638,3077,3,1,1,1,1,3,3,14004]</td><td class="noBorder center bold small narrow">[7622,1426,7524,6638,3052,3,1,1,1,1,3,3,14004]</td><td class="noBorder center bold small narrow">[7622,7524,7524,7014,3042]</td><td class="noBorder center bold small narrow">[7622,7720,7720,7014,3096]</td><td class="noBorder center bold small narrow">[7622,7543,6751,6457,3045]</td></tr></table><p>Но у вас могут быть другие быстрые команды. Меня эти по скорости не подводили. На первых порах можно почаще смотреть на команду противника за 50 золотых. Просто есть несколько мелких ботов с сильными (не по мощи) топ-войсками, которые могут снизить скорость ведения боёв. Большая помощь в PvP от талисманов, дающих удвоенные очки. Талисманы даются за бои с использованием монолитов.</p><p>Вот и всё что хотел рассказать о PvP. Извиняюсь, что длинно. Обрезал даже про монолиты. Надеюсь, что хоть чем-то помог с этой информацией. Как бить PvP - классически, по ботам, или пополам - решать вам. Это было готово давно, всё решал нужно это или нет. Пусть будет.</p><p class="right italic large bold blue">Mauricio</p><br></span></div><div id="Paris" class="tabcontent"><h1>Название статьи 2</h1><p class="grey-dark center">Статья 2</p></div><div id="Tokyo" class="tabcontent"><h1>Название статьи 3</h1><p class="grey-dark center">Статья 3</p></div><div id="Moscow" class="tabcontent"><h1>Название статьи 4</h1><p class="grey-dark center">Статья 4</p></div><div id="Rome" class="tabcontent"><h1>Название статьи 5</h1><p class="grey-dark center">Статья 5</p></div></body></html>
+</div><div id="London" class="tabcontent"><h1>Скоростная тактика в PvP от Mauricio</h1><span class="grey-dark"><p>Есть два вида PvP: обычный (классический) и ботовый. Смысл быстрой игры в PvP основан на боях с ботами, то есть с командами до 9÷10к мощи, иногда и чуть больше, если у них нет никаких сильных войск типа Хризы, Стеллы и героя. Если герой всё же иногда есть, то без класса. Обобщая, без всего того, что помешает быстрому прохождению.</p><p>Под каждую локацию подбирается сборка, рассчитанная на победу за минимальное количество ходов. Если в предложенных трёх боях нет мелких ботов, то делается прокрутка за 1 алмаз. Так вы подбираете себе команду противника для боя. Но бывает накладно по алмазам (можешь отдать за 1 час игры в PvP всю дань по алмазам за этот же час, а при долгой игре и больше). То есть, кто идёт вдолгую, к этой трате должны быть готовы, но можно остановиться и на своём минимуме. Некоторые из ботов дают побольше очков, чем другие, и можно выбирать их в первую очередь. Со временем, по этой тактике игры, они легко запоминаются, и, возможно, их больше, чем эти - Velpar, Halmar, Marlo, Nizel, Cxuма, PAOK. Всем даются разные очки за победу над одним и тем же противником. Чем выше ваш уровень героя, тем меньше очков за победу вы получите. Самые скромные очки получают игроки с уровнем 2000+.</p><p>Результат достигается за счёт скорости проведения боёв. Важно знать своё прохождение очков за час. Перед началом забега в PvP смотрите свои очки, запоминаете и, через час, на сравнении, увидите свой результат за час. Обычно, я бегу от получения дани до новой дани. Если вы пробиваете за час непрерывной игры 6к и меньше-плохо, 7÷14к - средний результат, 15÷18к - хороший, а 19÷23к (и, иногда, у более маленьких по уровню и побольше) - топовый. Но это на красной бонусной подсветке. Без подсветки, на простых локациях - поменьше. И, наконец, медленнее всех - локации с бутылками маны.</p><p>Дальше непрерывность по времени выбираете сами, под себя. Так же вы можете видеть, как бегут ваши соперники по группе (запоминая и сравнивая их результат), а если вы бежите в мировом, то по мировому. Это очень помогает в стратегии. То есть, если вы бьёте 20к за час, а ваш соперник - 12к, то при одинаковй игре по времени, вы легко убежите от него. В свою команду вы выбираете героя на <b>лучнике</b> или <b>титане</b>! Элементалист КАТЕГОРИЧЕСКИ НЕ РЕКОМЕНДУЕТСЯ!!! Нужен старт с заходом 50% маны. Иногда можно использовать команды без героя, для более быстрого прохождения.</p><p>Примеры команд по прохождению локаций:</p><table class="noBorder"><tr><td class="noBorder large bold">Зелёный</td><td class="noBorder large bold">Фиолетовый</td><td class="noBorder large bold">Жёлтый</td><td class="noBorder large bold">Синий</td><td class="noBorder large bold">Элементаль</td></tr><tr><td class="noBorder"><img style="margin-top: 1px; margin-bottom: 1px; width: 200px;" src="/gems-of-war/graf/sets/PvP_green.png" alt=""></td><td class="noBorder"><img style="margin-top: 1px; margin-bottom: 1px; width: 200px;" src="/gems-of-war/graf/sets/PvP_violet.png" alt=""></td><td class="noBorder"><img style="margin-top: 1px; margin-bottom: 1px; width: 200px;" src="/gems-of-war/graf/sets/PvP_yellow.png" alt=""></td><td class="noBorder"><img style="margin-top: 1px; margin-bottom: 1px; width: 200px;" src="/gems-of-war/graf/sets/PvP_blue.png" alt=""></td><td class="noBorder"><img style="margin-top: 1px; margin-bottom: 1px; width: 200px;" src="/gems-of-war/graf/sets/PvP_elemental.png" alt=""></td></tr><tr><td class="noBorder center bold"><button class="copy-btn" data-copy="[7622,1426,7524,6638,3077,3,1,1,1,1,3,3,14004]">[Код сборки]</button></td>
+    <td class="noBorder center bold"><button class="copy-btn" data-copy="[7622,1426,7524,6638,3052,3,1,1,1,1,3,3,14004]">[Код сборки]</button></td>
+    <td class="noBorder center bold"><button class="copy-btn" data-copy="[7622,7524,7524,7014,3042]">[Код сборки]</button></td>
+    <td class="noBorder center bold"><button class="copy-btn" data-copy="[7622,7720,7720,7014,3096]">[Код сборки]</button></td>
+    <td class="noBorder center bold"><button class="copy-btn" data-copy="[7622,7543,6751,6457,3045]">[Код сборки]</button></td></tr></table><p>Но у вас могут быть другие быстрые команды. Меня эти по скорости не подводили. На первых порах можно почаще смотреть на команду противника за 50 золотых. Просто есть несколько мелких ботов с сильными (не по мощи) топ-войсками, которые могут снизить скорость ведения боёв. Большая помощь в PvP от талисманов, дающих удвоенные очки. Талисманы даются за бои с использованием монолитов.</p><p>Вот и всё что хотел рассказать о PvP. Извиняюсь, что длинно. Обрезал даже про монолиты. Надеюсь, что хоть чем-то помог с этой информацией. Как бить PvP - классически, по ботам, или пополам - решать вам. Это было готово давно, всё решал нужно это или нет. Пусть будет.</p><p class="right italic large bold blue">Mauricio</p><br></span><div id="copy-toast" class="toast">Скопировано!</div></div><div id="Paris" class="tabcontent"><h1>Название статьи 2</h1><p class="grey-dark center">Статья 2</p></div><div id="Tokyo" class="tabcontent"><h1>Название статьи 3</h1><p class="grey-dark center">Статья 3</p></div><div id="Moscow" class="tabcontent"><h1>Название статьи 4</h1><p class="grey-dark center">Статья 4</p></div><div id="Rome" class="tabcontent"><h1>Название статьи 5</h1><p class="grey-dark center">Статья 5</p></div></body></html>
 <script>
     function openCity(evt, cityName) {
         var i, tabcontent, tablinks;
@@ -38,3 +79,28 @@
     // Получите элемент с id="defaultOpen" и нажмите на него
     document.getElementById("defaultOpen").click();
 </script>
+<script>
+    const toast = document.getElementById('copy-toast');
+
+    function showToast(message = 'Скопировано!') {
+      toast.textContent = message;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2000);
+    }
+
+    document.querySelectorAll('.copy-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const textToCopy = btn.dataset.copy;
+
+        navigator.clipboard.writeText(textToCopy).then(() => {
+          // Можно сделать разные сообщения для разных кнопок
+          const label = btn.textContent;
+          showToast(`Скопировано: ${label}`);
+        }).catch(err => {
+          console.error('Не удалось скопировать:', err);
+        });
+      });
+    });
+  </script>

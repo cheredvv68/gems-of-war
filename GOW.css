@@ -115,7 +115,9 @@ p {
 p.serif {
   font-family: "Times New Roman", Times, serif;
 }
-
+.narrow {
+  font-family: "Exo 2 Condensed", "Arial Narrow", sans-serif;
+}
 p.sansserif {
   font-family: Verdana, Helvetica, Tahoma, sans-serif, sans-serif;
 }
